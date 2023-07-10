@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import boxers from './scripts/boxers.json';
 import { Table } from './components/table';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Table/>
+    <Table boxers={boxers}/>
   );
 }
 

@@ -1,33 +1,30 @@
-export const Table = ({}) => {
+export const Table = ({boxers}) => {
     return (
-        <table class="table">
+        <table className="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">id</th>
+                    <th scope="col">name</th>
+                    <th scope="col">age</th>
+                    <th scope="col">nationality</th>
+                    <th scope="col">stance</th>
+                    <th scope="col">division</th>
+                    <th scope="col">record</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
+                {boxers.map((boxer) => (
+                    <tr key={boxer.id}>
+                        <th>{boxer.id}</th>
+                        <td>{boxer.name}</td>
+                        <td>{boxer.age}</td>
+                        <td>{boxer.nationality}</td>
+                        <td>{boxer.stance}</td>
+                        <td>{boxer.division}</td>
+                        <td>{boxer.record}</td>
+                    </tr>
+                ))}
             </tbody>
         </table>
     )
-} 
+}
