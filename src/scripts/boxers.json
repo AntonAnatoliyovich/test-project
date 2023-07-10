@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Santos Saúl Álvarez Barragán",
+        "age": 32,
+        "nationality": "Mexico",
+        "stance": "orthodox",
+        "division": "super middle",
+        "record": "(59-2-2, 39 KO)",
+        "id": 1
+    },
+    {
+        "name": "Oleksandr Usyk",
+        "age": 36,
+        "nationality": "Ukraine",
+        "stance": "southpaw",
+        "division": "heavy",
+        "record": "(20-0-0, 13 KO)",
+        "id": 2
+    },
+    {
+        "name": "Shane Donte Mosley",
+        "age": 51,
+        "nationality": "USA",
+        "stance": "orthodox",
+        "division": "welter",
+        "record": "(49-10-1, 41 KO)",
+        "id": 3
+    },
+    {
+        "name": "Antonio Margarito Montiel",
+        "age": 45,
+        "nationality": "Mexico",
+        "stance": "orthodox",
+        "division": "welter",
+        "record": "(41-8-0, 27 KO)",
+        "id": 4
+    },
+    {
+        "name": "Bernard Humphrey Hopkins Jr",
+        "age": 58,
+        "nationality": "USA",
+        "stance": "orthodox",
+        "division": "middle",
+        "record": "(55-8-2, 32 KO)",
+        "id": 5
+    }
+]
