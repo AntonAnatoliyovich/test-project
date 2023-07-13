@@ -1,63 +1,50 @@
 import React from "react";
 
-export const Table = (boxer) => {
-
-    const {boxers} = boxer;
-    const [sortedField, setSortedField] = React.useState(null);
-    let sortedBoxers = [...boxers];
-    sortedBoxers.sort((a,b) => {
-        if (a[sortedField] < b[sortedField]) {
-            return -1;
-        }
-        if (a[sortedField] > b[sortedField]) {
-            return 1;
-        }
-        return 0;
-    })
+export const Table = (props) => {
 
     return (
-        <table className="table">
+        <table className="table table-striped table-dark">
             <thead>
                 <tr>
                     <th scope="col">
-                        <button type="button" onClick={() => setSortedField('id')}>
-                            id
+                        <button className="btn btn-success" type="button" onClick={props.onSort.bind(null, 'id')}>
+                            id {props.sortField === 'id' ? <small>{props.sort}</small> : null}
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" onClick={() => setSortedField('name')}>
-                            name
+                        <button className="btn btn-success" type="button" onClick={props.onSort.bind(null, 'name')}>
+                            name {props.sortField === 'name' ? <small>{props.sort}</small> : null}
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" onClick={() => setSortedField('age')}>
-                            age
+                        <button className="btn btn-success" type="button" onClick={props.onSort.bind(null, 'age')}>
+                            age {props.sortField === 'age' ? <small>{props.sort}</small> : null}
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" onClick={() => setSortedField('nationality')}>
-                            nationality
+                        <button className="btn btn-success" type="button" onClick={props.onSort.bind(null, 'nationality')}>
+                            nationality {props.sortField === 'nationality' ? <small>{props.sort}</small> : null}
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" onClick={() => setSortedField('stance')}>
-                            stance
+                        <button className="btn btn-success" type="button" onClick={props.onSort.bind(null, 'stance')}>
+                            stance {props.sortField === 'stance' ? <small>{props.sort}</small> : null}
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" onClick={() => setSortedField('division')}>
-                            division
+                        <button className="btn btn-success" type="button" onClick={props.onSort.bind(null, 'division')}>
+                            division {props.sortField === 'division' ? <small>{props.sort}</small> : null}
                         </button>
                     </th>
                     <th scope="col">
-                        <button type="button" onClick={() => setSortedField('record')}>
+                        <button className="btn btn-success">
                             record
                         </button>
                     </th>
                 </tr>
             </thead>
             <tbody>
-                {boxers.map((boxer) => (
+                {props.boxers.map((boxer) => (
                     <tr key={boxer.id}>
                         <th>{boxer.id}</th>
                         <td>{boxer.name}</td>

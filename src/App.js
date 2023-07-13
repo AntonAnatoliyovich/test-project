@@ -1,28 +1,36 @@
-// import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
 import boxers from './scripts/boxers.json';
 import { Table } from './components/table';
+import _ from 'lodash';
 
-function App() {
-  return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <Table boxers={boxers}/>
-  );
+class App extends Component {
+  state ={
+    boxers: boxers,
+    sort: 'asc',  // 'desc'
+    sortField: 'id',
+    boxersSorted: boxers
+  }
+
+  onSort = sortField => {
+    const cloneBoxers = this.state.boxers.concat();
+    const sort = this.state.sort === 'asc' ? 'desc' : 'asc';
+    const boxersSorted = _.orderBy(cloneBoxers, sortField, sort);
+    this.setState({boxersSorted, sort, sortField})
+    // console.log(sortField)
+    console.log(boxersSorted)
+  }
+
+  render() {
+    return (
+      <Table
+        boxers={this.state.boxersSorted}
+        onSort={this.onSort}
+        sort={this.state.sort}
+        sortField={this.state.sortField}
+      />
+    );
+  }
 }
 
 export default App;
