@@ -6,18 +6,16 @@ import _ from 'lodash';
 
 class App extends Component {
   state ={
-    boxers: boxers,
-    sort: 'asc',  // 'desc'
+    sort: 'asc',
     sortField: 'id',
     boxersSorted: boxers
   }
 
   onSort = sortField => {
-    const cloneBoxers = this.state.boxers.concat();
+    const cloneBoxers = [...this.state.boxersSorted];
     const sort = this.state.sort === 'asc' ? 'desc' : 'asc';
     const boxersSorted = _.orderBy(cloneBoxers, sortField, sort);
     this.setState({boxersSorted, sort, sortField})
-    // console.log(sortField)
     console.log(boxersSorted)
   }
 

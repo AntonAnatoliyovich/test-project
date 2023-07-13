@@ -6,6 +6,7 @@
         "stance": "orthodox",
         "division": "super middle",
         "record": "(59-2-2, 39 KO)",
+        "photo": "https://image-cdn.essentiallysports.com/wp-content/uploads/GettyImages-1147020511.jpg?width=900",
         "id": 1
     },
     {
@@ -15,6 +16,7 @@
         "stance": "southpaw",
         "division": "heavy",
         "record": "(20-0-0, 13 KO)",
+        "photo": "https://img.etimg.com/thumb/msid-101549614,width-300,height-225,imgsize-91184,,resizemode-75/boxer-oleksandr-usyk-to-defend-unified-world-heavyweight-title-against-daniel-dubois-in-poland.jpg",
         "id": 2
     },
     {
@@ -24,6 +26,7 @@
         "stance": "orthodox",
         "division": "welter",
         "record": "(49-10-1, 41 KO)",
+        "photo": "http://www.cyberboxingzone.com/images/mosley-shane-111.jpg",
         "id": 3
     },
     {
@@ -33,6 +36,7 @@
         "stance": "orthodox",
         "division": "welter",
         "record": "(41-8-0, 27 KO)",
+        "photo": "https://i.pinimg.com/originals/8a/0c/d0/8a0cd078e76fe34c56174c5a50a78f13.jpg",
         "id": 4
     },
     {
@@ -42,6 +46,147 @@
         "stance": "orthodox",
         "division": "middle",
         "record": "(55-8-2, 32 KO)",
+        "photo": "https://media.gettyimages.com/id/163475781/photo/bernard-hopkins-v-tavoris-cloud.jpg?s=1024x1024&w=gi&k=20&c=ikiQr9LK2NDCfnov4cEHneRuE56dXMAD019E6GhgZEA=",
         "id": 5
+    },
+    {
+        "name": "Oscar De La Hoya",
+        "age": 50,
+        "nationality": "USA",
+        "stance": "orthodox",
+        "division": "welter",
+        "record": "(39-6-0, 30 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3o83lW7kbMHdLojJp1IY7bt34tEEocw3k02xSGKnVFYrGABTKLrkts3RRfbV3wIOrYqA&usqp=CAU",
+        "id": 6
+    },
+    {
+        "name": "Felix Trinidad",
+        "age": 50,
+        "nationality": "Puerto Rico",
+        "stance": "orthodox",
+        "division": "welter",
+        "record": "(42-3-0, 35 KO)",
+        "photo": "https://nyfights.com/wp-content/uploads/2022/04/Screenshot_20220404-202535_Instagram.jpg.webp",
+        "id": 7
+    },
+    {
+        "name": "Julio Cesar Chavez",
+        "age": 61,
+        "nationality": "Mexico",
+        "stance": "orthodox",
+        "division": "super light",
+        "record": "(107-6-2, 85 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjiU7IxEn4CdyLassRqaDl9PL2rJiW-bnWM8GvmfN0oS9SU3mJv1a1NSp5nWoKAdw91M0&usqp=CAU",
+        "id": 8
+    },
+    {
+        "name": "Manny Pacquiao",
+        "age": 44,
+        "nationality": "Philippines",
+        "stance": "southpaw",
+        "division": "welter",
+        "record": "(62-8-2, 39 KO)",
+        "photo": "https://sports.inquirer.net/files/2021/05/063_1163279850-1-scaled.jpg",
+        "id": 9
+    },
+    {
+        "name": "Timothy Bradley Jr",
+        "age": 39,
+        "nationality": "USA",
+        "stance": "orthodox",
+        "division": "super light",
+        "record": "(33-2-1, 13 KO)",
+        "photo": "https://www.rappler.com/tachyon/r3-assets/9226C2B3738647C78083A048800D3AA2/img/DC0B2EF50F034135A6CD540663E2A635/pacquiao-bradley-weigh-in-las-vegas-20160409-001.jpg?resize=1800%2C1200&zoom=1",
+        "id": 10
+    },
+    {
+        "name": "Floyd Mayweather Jr",
+        "age": 46,
+        "nationality": "USA",
+        "stance": "orthodox",
+        "division": "welter",
+        "record": "(50-0-0, 27 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx2A_HCdfj2ObchIrVTha87Rj2lGhAJtk5WJF0nwnqYqscAa5a65irN6PVsRTfmE5JbMA&usqp=CAU",
+        "id": 11
+    },
+    {
+        "name": "Juan Manuel Marquez",
+        "age": 49,
+        "nationality": "Mexico",
+        "stance": "orthodox",
+        "division": "feather",
+        "record": "(56-7-1, 40 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2CpdbISRP8sRVdlYre9xd1v93e_56h8NCKtEua7eLsBPYW2oUMjBcIY16JGKwzeztksw&usqp=CAU",
+        "id": 12
+    },
+    {
+        "name": "Serhii Fedchenko",
+        "age": 42,
+        "nationality": "Ukraine",
+        "stance": "orthodox",
+        "division": "super light",
+        "record": "(34-3-0, 14 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBJIYK0KGyTfnd7rsqV2pDsW6BL9WlCVNR9IGR3CINpYOz2VEeScegegybjCDMZuj_Yvs&usqp=CAU",
+        "id": 13
+    },
+    {
+        "name": "Volodimir Kravets",
+        "age": 42,
+        "nationality": "Ukraine",
+        "stance": "southpaw",
+        "division": "welter",
+        "record": "(26-1-0, 15 KO)",
+        "photo": "https://boxrec.com/wiki/images/3/3d/Volodymyr_Kravets.jpg",
+        "id": 14
+    },
+    {
+        "name": "Joel Casamayor",
+        "age": 52,
+        "nationality": "Cuba",
+        "stance": "southpaw",
+        "division": "light",
+        "record": "(38-6-1, 22 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXX_mcs_PCvRFEyHsTYq6VrOr_BWqJDVKZV1qc_9j_lpFKh09NlS_BqFu7jO2vykc6-As&usqp=CAU",
+        "id": 15
+    },
+    {
+        "name": "Mike Tyson",
+        "age": 57,
+        "nationality": "USA",
+        "stance": "orthodox",
+        "division": "heavy",
+        "record": "(50-6-0, 44 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITPB5_BPn4_-0_Dd9a9KKwRduiMVv9qkuc74vOeRKgqjk9rXhq9gEJu4qBQGe7_E5U-Y&usqp=CAU",
+        "id": 16
+    },
+    {
+        "name": "Lennox Lewis",
+        "age": 57,
+        "nationality": "United Kingdom",
+        "stance": "orthodox",
+        "division": "heavy",
+        "record": "(41-2-1, 32 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyrqcf-F3qel361Ea7j4qkF5mYJ7ZT-qxmVXcdWC5p9kXF7m9YphlYtZb2mocvXyY9RR8&usqp=CAU",
+        "id": 17
+    },
+    {
+        "name": "Evander Holyfield",
+        "age": 60,
+        "nationality": "USA",
+        "stance": "orthodox",
+        "division": "heavy",
+        "record": "(44-10-2, 29 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI-dAbbPURulmkSICC5WSpPYIzpDRqfZb-MpaD5MZTqK7dkeIIBZWIO1RtxijmTr-dygA&usqp=CAU",
+        "id": 18
+    },
+    {
+        "name": "Larry Holmes",
+        "age": 73,
+        "nationality": "USA",
+        "stance": "orthodox",
+        "division": "heavy",
+        "record": "(69-6-0, 44 KO)",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2tyNXwcGVw9n9kval6RL11ePBHgZ-4aNhXVt4wiUD6KntE2pR3o8z-chVKRlPZMrO2LA&usqp=CAU",
+        "id": 19
     }
 ]

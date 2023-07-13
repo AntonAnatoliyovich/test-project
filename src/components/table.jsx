@@ -41,6 +41,11 @@ export const Table = (props) => {
                             record
                         </button>
                     </th>
+                    <th scope="col">
+                        <button className="btn btn-success">
+                            photo
+                        </button>
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -53,6 +58,9 @@ export const Table = (props) => {
                         <td>{boxer.stance}</td>
                         <td>{boxer.division}</td>
                         <td>{boxer.record}</td>
+                        <td>
+                            <img alt={boxer.name} src={boxer.photo} width='100px'/>
+                        </td>
                     </tr>
                 ))}
             </tbody>
