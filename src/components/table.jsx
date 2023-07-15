@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Table = (props, deleteBoxer) => {
+export const Table = (props) => {
 
     return (
         <table className="table table-striped table-dark">
@@ -54,7 +54,7 @@ export const Table = (props, deleteBoxer) => {
                 </tr>
             </thead>
             <tbody>
-                {props.boxers.map((boxer, id) => (
+                {props.boxers.map((boxer) => (
                     <tr key={boxer.id}>
                         <th>{boxer.id}</th>
                         <td>{boxer.name}</td>
@@ -69,7 +69,7 @@ export const Table = (props, deleteBoxer) => {
                         <td>
                             <button
                                 className="btn btn-danger"
-                                onClick={() => deleteBoxer(id)}
+                                onClick={() => props.deleteBoxer(boxer.id)}
                             >
                                 delete
                             </button>

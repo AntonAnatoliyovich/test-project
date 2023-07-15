@@ -15,8 +15,9 @@ export class BoxersForm extends Component {
     const record = event.target.record.value;
     const photo = event.target.photo.value;
     const { addBoxer } = this.props;
+    const newBoxer = { id, name, age, nationality, stance, division, record, photo }
 
-    addBoxer({ id, name, age, nationality, stance, division, record, photo });
+    addBoxer(newBoxer);
     event.target.reset();
     };
 

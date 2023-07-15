@@ -20,37 +20,35 @@ class App extends Component {
     console.log(boxersSorted)
   }
 
-
-  addBoxer = ({ id, name, age, nationality, stance, division, record, photo }) => {
-    // console.log( id, name, age, nationality, stance, division, record, photo )
-    const newBoxer = {id, name, age, nationality, stance, division, record, photo}
-    const newArray = this.state.boxersSorted.push(newBoxer)
-    console.log(this.state.boxersSorted)
-    // this.setState({boxersSorted:newArray});
-
-    this.setState(({ boxersSorted }) => ({
-      boxersSorted: [...boxersSorted, newArray],
-    }));
+  addBoxer = ( newBoxer ) => {
+    const newArray = [...this.state.boxersSorted]
+    newArray.push(newBoxer)
+    this.setState(() => ({
+      boxersSorted: newArray
+    }))
   };
 
-  deleteBoxer = id =>
-  this.setState(({ boxersSorted }) => ({
-    boxersSorted: boxersSorted.filter(boxer => boxer.id !== id),
-  }));
-
+  deleteBoxer = id => {
+    const currentBoxers = this.state.boxersSorted.filter(boxer => {
+      return boxer.id !== id
+    })
+    this.setState(() => ({
+      boxersSorted: currentBoxers,
+    }))
+}
 
   render() {
     return (
       <>
         <BoxersForm
           addBoxer={this.addBoxer}
-          deleteBoxer={this.deleteBoxer}
         />
         <Table
           boxers={this.state.boxersSorted}
           onSort={this.onSort}
           sort={this.state.sort}
           sortField={this.state.sortField}
+          deleteBoxer={this.deleteBoxer}
         />
       </>
     );
