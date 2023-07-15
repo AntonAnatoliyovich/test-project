@@ -17,7 +17,6 @@ class App extends Component {
     const sort = this.state.sort === 'asc' ? 'desc' : 'asc';
     const boxersSorted = _.orderBy(cloneBoxers, sortField, sort);
     this.setState({boxersSorted, sort, sortField})
-    console.log(boxersSorted)
   }
 
   addBoxer = ( newBoxer ) => {
