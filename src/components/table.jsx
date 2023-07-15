@@ -69,7 +69,7 @@ export const Table = (props, deleteBoxer) => {
                         <td>
                             <button
                                 className="btn btn-danger"
-                                onClick={() => {deleteBoxer(id)}}
+                                onClick={() => deleteBoxer(id)}
                             >
                                 delete
                             </button>

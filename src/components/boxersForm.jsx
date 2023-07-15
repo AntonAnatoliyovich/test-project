@@ -1,5 +1,6 @@
 import React from "react";
 import { Component } from 'react';
+import css from "./boxersForm.module.css"
 
 export class BoxersForm extends Component {
     handleFormSubmit = event => {
@@ -21,72 +22,87 @@ export class BoxersForm extends Component {
 
     render() {
         return (
-            <form className="mb-3" onSubmit={this.handleFormSubmit}>
-                <label className="form-label">Id</label>
-                <input
-                    className="form-control"
-                    type="number"
-                    name="id"
-                    placeholder="Enter id"
-                    required
-                />
-                <label className="form-label">Name</label>
-                <input
-                    className="form-control"
-                    type="text"
-                    name="name"
-                    placeholder="Enter name"
-                    // required
-                />
-                <label className="form-label">Age</label>
-                <input
-                    className="form-control"
-                    type="number"
-                    name="age"
-                    placeholder="Enter age"
-                    // required
-                />
-                <label className="form-label">Nationality</label>
-                <input
-                    className="form-control"
-                    type="text"
-                    name="nationality"
-                    placeholder="Enter nationality"
-                    // required
-                />
-                <label className="form-label">Stance</label>
-                <input
-                    className="form-control"
-                    type="text"
-                    name="stance"
-                    placeholder="Enter stance"
-                    // required
-                />
-                <label className="form-label">Division</label>
-                <input
-                    className="form-control"
-                    type="text"
-                    name="division"
-                    placeholder="Enter division"
-                    // required
-                />
-                <label className="form-label">Record</label>
-                <input
-                    className="form-control"
-                    type="text"
-                    name="record"
-                    placeholder="Enter record"
-                    // required
-                />
-                <label className="form-label">Photo</label>
-                <input
-                    className="form-control"
-                    type="text"
-                    name="photo"
-                    placeholder="Enter url photo"
-                    // required
-                />
-                <button className="btn-warning" type="submit">
+            <form className={css.form} onSubmit={this.handleFormSubmit}>
+                <label className={css.form__label}>
+                    <input
+                        className={css.form__input}
+                        type="number"
+                        name="id"
+                        placeholder="Enter id"
+                        required
+                    />
+                    Id
+                </label>
+                <label className={css.form__label}>
+                    <input
+                        className={css.form__input}
+                        type="text"
+                        name="name"
+                        placeholder="Enter name"
+                        // required
+                    />
+                    Name
+                </label>
+                <label className={css.form__label}>
+                    <input
+                        className={css.form__input}
+                        type="number"
+                        name="age"
+                        placeholder="Enter age"
+                        // required
+                    />
+                    Age
+                </label>
+                <label className={css.form__label}>
+                    <input
+                        className={css.form__input}
+                        type="text"
+                        name="nationality"
+                        placeholder="Enter nationality"
+                        // required
+                    />
+                    Nationality</label>
+                <label className={css.form__label}>
+                    <input
+                        className={css.form__input}
+                        type="text"
+                        name="stance"
+                        placeholder="Enter stance"
+                        // required
+                    />
+                    Stance
+                </label>
+                <label className={css.form__label}>
+                    <input
+                        className={css.form__input}
+                        type="text"
+                        name="division"
+                        placeholder="Enter division"
+                        // required
+                    />
+                    Division
+                </label>
+                <label className={css.form__label}>
+                    <input
+                        className={css.form__input}
+                        type="text"
+                        name="record"
+                        placeholder="Enter record"
+                        // required
+                    />
+                    Record
+                </label>
+                <label className={css.form__label}>
+                    <input
+                        className={css.form__input}
+                        type="text"
+                        name="photo"
+                        placeholder="Enter url photo"
+                        // required
+                    />
+                    Photo
+                </label>
+                <button className={css.form__button} type="submit">
                     Add boxer
                 </button>
             </form>
