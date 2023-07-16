@@ -3,13 +3,15 @@ import React, { Component } from 'react';
 import boxers from './scripts/boxers.json';
 import { Table } from './components/table';
 import { BoxersForm } from './components/boxersForm';
+import { Filter } from './components/filter';
 import _ from 'lodash';
 
 class App extends Component {
   state ={
     sort: 'asc',
     sortField: 'id',
-    boxersSorted: boxers
+    boxersSorted: boxers,
+    boxerFiltered: boxers
   }
 
   onSort = sortField => {
@@ -27,6 +29,19 @@ class App extends Component {
     }))
   };
 
+  addFilter = ( event ) => {
+    let filterName = event.target.value
+
+    const filteredBoxers = this.state.boxersSorted.filter(boxer => {
+      if(boxer.name.toLowerCase().includes(filterName.toLowerCase())) {
+        return boxer
+      }
+    })
+    this.setState(() => ({
+      boxerFiltered: filteredBoxers
+    }))
+  };
+
   deleteBoxer = id => {
     const currentBoxers = this.state.boxersSorted.filter(boxer => {
       return boxer.id !== id
@@ -41,6 +56,9 @@ class App extends Component {
       <>
         <BoxersForm
           addBoxer={this.addBoxer}
+        />
+        <Filter
+          addFilter={this.addFilter}
         />
         <Table
           boxers={this.state.boxersSorted}
